@@ -13,6 +13,7 @@ class Env extends IController {
 
     exitSplash(){
 	let url = this.model.getItem("ram.autoRun");
+	url = '42'
 	if( url ){
 	    this.play( {element:{dataset:{url}}} );
 	}else{
@@ -193,7 +194,7 @@ class Env extends IController {
 	
 	if( !finalURL )
 	    finalURL = proxy + url;
-	
+	finalURL = '/games/amsoffice.hex';
 	if( build || url == "null" ){
 	    
 	    if( build )
